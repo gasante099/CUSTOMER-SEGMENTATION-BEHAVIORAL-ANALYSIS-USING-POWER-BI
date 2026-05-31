@@ -4,6 +4,7 @@
 This project focuses on analysing a sales dataset to help understand the customer base of the business better. The analysis aims to identify patterns in customer growth, demographics, tenure, income, and professional profiles to make data-driven marketing and retention decisions. The analysis was done using Microsoft power BI for data cleaning and visualizations.
 
 
+
 ## DATASET DESCRIPTION
 The dataset comprises customer segmentation dataset containing nine (9) columns and 500 rows with information on Customer ID, Name, Gender, Age, Region, Occupation, Income, Customer Segment and Join Date. The dataset was initially reviewed to understand its structure, variables, and overall quality before proceeding with the analysis.
 

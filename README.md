@@ -34,11 +34,14 @@ Key steps included:
 •	All columns were reviewed to detect inconsistencies in spelling, formatting, and data types.
 
 •	New columns were created using power query to aid in the analysis, which include;
-    	Year: Extracted from the customer Join_date to enable trend analysis over time.
+
+    Year: Extracted from the customer Join_date to enable trend analysis over time.
       Date.Year([Join_Date])
-    	Tenure: Calculated to measure customer loyalty and duration of engagement with the business.
+	  
+    Tenure: Calculated to measure customer loyalty and duration of engagement with the business.
       Date.Year(Date.From(DateTime.LocalNow())) - Date.Year([Join_Date])
-    	Age Group: Customers were segmented into meaningful demographic categories to support targeted insights and reporting
+    
+	Age Group: Customers were segmented into meaningful demographic categories to support targeted insights and reporting
                         if [Age] < 25 then "Youth" 
                         else if [Age] <= 40 then "Young Adult" 
                         else if [Age] <= 60 then "Adult" 

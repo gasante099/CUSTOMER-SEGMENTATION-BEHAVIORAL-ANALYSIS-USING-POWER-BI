@@ -3,6 +3,7 @@
 ## PROJECT OVERVIEW
 This project focuses on analysing a sales dataset to help understand the customer base of the business better. The analysis aims to identify patterns in customer growth, demographics, tenure, income, and professional profiles to make data-driven marketing and retention decisions. The analysis was done using Microsoft power BI for data cleaning and visualizations.
 
+![image](https://github.com/gasante099/CUSTOMER-SEGMENTATION-BEHAVIORAL-ANALYSIS-USING-POWER-BI/blob/main/pwerbi%20dashboard.png?raw=true)
 
 
 ## DATASET DESCRIPTION

@@ -28,8 +28,11 @@ The aim of the project is to analyse the dataset to understand customer growth, 
 The dataset was cleaned and analysed using power query in using Microsoft Power BI.
 
 Key steps included:
+
 •	Duplicate records were identified and removed to ensure data integrity and prevent bias in the analysis.
+
 •	All columns were reviewed to detect inconsistencies in spelling, formatting, and data types.
+
 •	New columns were created using power query to aid in the analysis, which include;
     	Year: Extracted from the customer Join_date to enable trend analysis over time.
       Date.Year([Join_Date])
@@ -40,16 +43,23 @@ Key steps included:
                         else if [Age] <= 40 then "Young Adult" 
                         else if [Age] <= 60 then "Adult" 
                         else "Senior"
+						
 •	To support KPI tracking and summary insights, the following measures were also created;
-	  Total Customers: Provides the overall customer count in the dataset.
+	
+	Total Customers: Provides the overall customer count in the dataset.
       COUNT(customers[Name])
-	  Average Age: Helps understand the general age distribution of customers.
+	
+	Average Age: Helps understand the general age distribution of customers.
       AVERAGE(customers[Age])   
-	   Average Tenure: Indicates the typical length of customer relationships, useful for retention analysis.
+	
+	Average Tenure: Indicates the typical length of customer relationships, useful for retention analysis.
       AVERAGE(customers[Tenure])    
-	   Average Income: Provides insight into the economic profile of the customer base.
+	   
+	Average Income: Provides insight into the economic profile of the customer base.
       AVERAGE(customers[Income])
+	  
 •	Exploratory Data Analysis was conducted to understand the distribution, relationships, and patterns within the dataset. Summary statistics were used to identify trends and key metrics.
+
 •	Visualizations such as bar charts and line chart, column chart and donut chart were also used to better interpret the data.
 
 
@@ -57,6 +67,7 @@ Key steps included:
 The analysis of the dataset revealed several important patterns related to product performance, regional sales distribution, and overall revenue generation.
 
 # Customer Growth Timeline
+
 The Total Customers by Year analysis reveals a generally positive growth trend over time, with a significant increase observed between 2015 and 2017, indicating a strong customer acquisition phase. Following this peak, there is a slight decline in 2018, after which customer numbers stabilize and fluctuate within a narrow range from 2019 to 2024, suggesting a period of maturity and consistent retention. However, a noticeable drop in the most recent year highlights a potential decline in customer acquisition or an increase in churn, signalling the need for further investigation into underlying factors affecting customer growth.
 
 # Region with the Highest Customers
@@ -76,6 +87,7 @@ The customer segmentation analysis indicates that the Retail segment dominates t
 
 
 ## RECCOMENDATION
+
 The analysis indicates a maturing customer base with a recent decline in growth, highlighting the need to strengthen customer retention strategies and investigate potential causes of churn.
 
 To drive expansion, the business should leverage the strong performance in the South region by replicating its successful strategies in lower-performing regions such as the Western and Northern regions. Additionally, while the Retail segment remains the primary driver, there is a clear opportunity to grow the underrepresented Private segment through targeted offerings and marketing.
